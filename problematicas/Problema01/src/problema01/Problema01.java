@@ -18,10 +18,10 @@ public class Problema01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-    
+
         String nombre;
         String posicion;
         int edad;
@@ -31,19 +31,19 @@ public class Problema01 {
         System.out.println("Dijite la cantidad de jugadores que va a ingresar");
         limite = entrada.nextInt();
         for (int i = 1; i <= limite; i++) {
-         entrada.nextLine();
-        System.out.println("Ingrese el nombre del jugador");
-        nombre = entrada.nextLine();
-        System.out.println("Ingrese la posicion del jugador");
-        posicion = entrada.nextLine();
-        System.out.println("Ingrese la edad del jugador");
-        edad = entrada.nextInt();
-        System.out.println("Ingrese la estatura del jugador");
-        estatura = entrada.nextDouble();
-        lista = String.format("%s%d. %s -%s-, edad %d, estatura %2f\n", 
-                lista,i,nombre,posicion,edad,estatura );
-     }
+            entrada.nextLine();
+            System.out.println("Ingrese el nombre del jugador");
+            nombre = entrada.nextLine();
+            System.out.println("Ingrese la posicion del jugador");
+            posicion = entrada.nextLine();
+            System.out.println("Ingrese la edad del jugador");
+            edad = entrada.nextInt();
+            System.out.println("Ingrese la estatura del jugador");
+            estatura = entrada.nextDouble();
+            lista = String.format("%s%d. %s -%s-, edad %d, estatura %2f\n",
+                    lista, i, nombre, posicion, edad, estatura);
+        }
         System.out.printf("%s", lista);
-    }       
-  
+    }
+
 }
