@@ -16,17 +16,17 @@ public class Problema04 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int filas = 5;
+        int fil = 5;
 
-        for (int i = 1; i <= filas; i++) {
-            for (int j = 1; j <= i; j++) {
+        for (int i = 1; i <= fil; i++) {
+            for (int f = 1; f <= i; f++) {
                 System.out.print("*");
             }
             System.out.println();
         }
 
-        for (int i = filas - 1; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
+        for (int i = fil - 1; i >= 1; i--) {
+            for (int f = 1; f <= i; f++) {
                 System.out.print("*");
             }
             System.out.println();
