@@ -15,11 +15,15 @@ public class Problema03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+       /* Se crea la cadena acumuladora para que se pueda imprimir todos
+        los restulados, luego el valor de cent cambia respecto a la ultima vuelta
+        del ciclo repetitivo,para que aumente su valor de 4 en 4 y esto va a 
+        ser impreso en el resultado final.
+       */
         String cadena = "";
         for (int far = 20; far <= 100; far+=4){
-            double cent = 0;
-            cent = cent + 5/9.0 * (far-32);
+            double cent; 
+            cent = 5/9.0 * (far-32);
             cadena = String.format("%s%.2f\n",cadena,cent);
             
                     

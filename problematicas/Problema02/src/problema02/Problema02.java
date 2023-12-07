@@ -16,7 +16,10 @@ public class Problema02 {
     public static void main(String[] args) {
         // TODO code application logic here       
         int limite = 10;
-        for (int num = 30; num >= limite; num--){
+        for (int num = 30; num >= limite; num--){/* lo que se multiplica el x2,x3
+            y el x4 es para que el valor de num aumenta, tanto en la cantidad,
+            como en la resta de variable
+            */
             System.out.printf("%d-%d-%d-%d\n",num, num*2,num*3,
                     num*4);
         }
